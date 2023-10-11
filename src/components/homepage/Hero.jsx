@@ -45,7 +45,7 @@ export default function Hero() {
 
 const Grid = () => {
   return (
-    <div className="w-full h-full grid grid-cols-1 gap-8 sm:gap-0 sm:grid-cols-3 grid-rows-2 md:grid-rows-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="w-full h-full grid grid-cols-1 gap-8 sm:gap-0 sm:grid-cols-3 grid-rows-2 md:grid-rows-1 md:grid-cols-1 auto-rows-auto lg:grid-cols-3 xl:grid-cols-4">
       <div className="md:col-span-1 relative lg:col-span-2 md:px-4 px-2 sm:col-span-2">
         <motion.div
           initial={{ height: "100%" }}
@@ -70,7 +70,7 @@ const Grid = () => {
         <MiniCard />
       </div>
       <div
-        className="sm:col-span-3 relative md:hidden my-8 md:my-0 xl:flex justify-end items-end xl:col-span-1 p-4 h-48 md:h-auto grayscale hover:grayscale-0 transition-all duration-500 bg-cover bg-center"
+        className="sm:col-span-3 h-full relative flex md:hidden my-8 md:my-0 xl:flex justify-end items-end xl:col-span-1 p-4 md:h-auto grayscale hover:grayscale-0 transition-all duration-500 bg-cover bg-center"
         style={{
           backgroundImage: `url(https://source.unsplash.com/random/1920×1080/?girl)`,
         }}

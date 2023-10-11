@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@prisma/client": "^5.4.1",
     "framer-motion": "^10.16.4",
+    "mongodb": "^6.1.0",
     "next": "13.5.4",
+    "next-auth": "^4.23.2",
+    "prisma": "^5.4.1",
     "react": "^18",
     "react-dom": "^18"
   },
