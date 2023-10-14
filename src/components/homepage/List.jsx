@@ -5,7 +5,7 @@ export default function List() {
     <div className="w-full flex py-20 justify-center items-center">
       <div className="w-full p-4 xl:p-0 flex flex-col md:flex-row max-w-7xl">
         {/*List*/}
-        <div className="w-full md:flex-1">
+        <div className="w-full md:w-2/3 border-r">
           <div className="w-full flex border-b text-neutral-400 justify-start items-center">
             <div className="cursor-pointer font-bold text-neutral-600 border-b p-2 border-neutral-600">
               Trending
@@ -17,15 +17,15 @@ export default function List() {
           </div>
 
           {/*Card*/}
-          <div className="w-full py-8 flex-col px-4 flex gap-8 justify-center items-center">
+          <div className="w-full py-8 flex-col px-4 flex gap-4 justify-center items-center">
             <ListCard />
             <ListCard />
           </div>
         </div>
 
         {/*Cetegories*/}
-        <div className="w-full md:w-auto">
-          Test
+        <div className="w-full flex justify-center md:items-start items-center md:w-1/3">
+          <Categories />
         </div>
       </div>
     </div>
@@ -43,9 +43,9 @@ const ListCard = () => {
         <p className="whitespace-nowrap hidden sm:inline overflow-hidden">24 sept <CalendarDaysIcon className="w-5 inline" /></p>
       </div>
       <div className="flex justify-center items-center w-full">
-        <div className="flex-1 flex flex-col justify-start items-start">
-          <h1 className="cutoff-text cutoff-text-1 text-base font-bold text-neutral-600">Hello World in every Programming Languages</h1>
-          <p className="cutoff-text cutoff-text-2 text-xs text-neutral-400">
+        <div className="flex-1 flex flex-col justify-start items-start md:gap-2">
+          <h1 className="cutoff-text cutoff-text-1 text-base md:text-lg font-bold text-neutral-600">Hello World in every Programming Languages</h1>
+          <p className="cutoff-text cutoff-text-2 text-xs md:text-sm text-neutral-400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies elit feugiat ullamcorper egestas. Ut pharetra ac tortor a mollis. Nullam ante lectus, interdum at enim ac, feugiat porta lorem. Nulla eleifend faucibus nulla, id condimentum augue finibus vitae. Vivamus efficitur leo sed orci lobortis luctus. Morbi fringilla non ex.
           </p>
         </div>
@@ -64,6 +64,24 @@ const ListCard = () => {
           <BookmarkIcon className="w-5" />
           <Squares2X2Icon className="w-5" />
         </div>
+      </div>
+    </div>
+  )
+}
+const Categories = () => {
+  return (
+    <div className="w-full flex justify-center md:items-start md:px-8 flex-col items-center gap-4">
+      <h1 className="text-xl font-bold text-neutral-600">Categories</h1>
+      <div className="flex justify-center items-center md:justify-start flex-wrap gap-x-2 gap-y-4">
+        <a href="http://" className="bg-neutral-200 hover:bg-neutral-100 transition-all duration-500 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
+        <a href="http://" className="bg-neutral-200 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
+        <a href="http://" className="bg-neutral-200 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
+        <a href="http://" className="bg-neutral-200 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
+        <a href="http://" className="bg-neutral-200 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
+        <a href="http://" className="bg-neutral-200 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
+        <a href="http://" className="bg-neutral-200 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
+        <a href="http://" className="bg-neutral-200 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
+        <a href="http://" className="bg-neutral-200 text-neutral-600 py-2 px-4 rounded-full">Programming</a>
       </div>
     </div>
   )

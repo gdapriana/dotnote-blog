@@ -1,5 +1,4 @@
 {
     "editor.formatOnSave": true,
-    "nodejs.editor.formatOnSave.prettier.mode": "Enabled",
     "editor.guides": [],
 }
