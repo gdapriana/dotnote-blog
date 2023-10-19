@@ -1,4 +1,6 @@
 ## DOTNOTE
+
+> Your daily blog app
 ![image](https://github.com/icequeenwand/dotnote-blog/assets/69134731/02742baa-8f7e-4e6b-8f39-b96505763635)
 
 
