@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "@prisma/client": "^5.4.1",
+    "@prisma/client": "^5.4.2",
     "axios": "^1.5.1",
     "framer-motion": "^10.16.4",
     "mongodb": "^6.1.0",
