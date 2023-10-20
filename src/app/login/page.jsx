@@ -2,6 +2,7 @@
 import { XMarkIcon } from "@heroicons/react/24/outline"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { signIn, useSession } from "next-auth/react"
 
 const metadata = {
   title: "Welcome Back!",
@@ -9,6 +10,8 @@ const metadata = {
 }
 
 export default function Login() {
+  const { data, status } = useSession()
+  console.log(data, status)
   return (
     <main className="w-full flex justify-center items-center h-screen top-0 right-0 absolute z-50">
       <div className="w-full md:w-1/2 bg-white relative flex flex-col gap-8 justify-center items-center h-full">
@@ -88,6 +91,7 @@ const LoginFormProvider = () => {
       <main className="w-full flex flex-col gap-8 justify-center items-center">
         <div className="flex justify-center gap-2 items-center">
           <Link
+            onClick={() => signIn("google")}
             href="/"
             className="flex rounded-full border py-2 px-4 bg-white text-neutral-600 justify-center items-center gap-2"
           >
